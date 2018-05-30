@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onRefresh() {
                 swipeRefreshLayout.setRefreshing(false);
+                listItems.clear();
                 loadRecyclerViewData();
             }
         });
